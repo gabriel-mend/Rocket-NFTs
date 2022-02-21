@@ -18,7 +18,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "public/": ["../public/"],
+      "@styles": ["../stitches.config.ts"]
+    }
   },
   "include": [
     "next-env.d.ts",

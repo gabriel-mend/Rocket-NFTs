@@ -1,6 +1,6 @@
 import { createStitches, globalCss } from "@stitches/react";
 
-export const { styled, getCssText, css } = createStitches({
+export const { styled, getCssText } = createStitches({
   theme: {
     fonts: {
       montserrat: "montserrat, sans-serif",
@@ -23,7 +23,12 @@ export const { styled, getCssText, css } = createStitches({
       6: "50px",
     },
   },
-  
+  utils: {
+    mx: (value) => ({
+      marginLeft: value,
+      marginRight: value,
+    })
+  },
 });
 
 export const globalStyles = globalCss({
@@ -36,10 +41,7 @@ export const globalStyles = globalCss({
     background: "$bodyBackground",
     fontFamily: "$montserrat"
   },
-  utils: {
-    mx: (value) => ({
-      marginLeft: value,
-      marginRight: value,
-    }),
-  },
+  a: {
+    textDecoration: "none"
+  }
 });
