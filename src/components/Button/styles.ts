@@ -10,4 +10,12 @@ export const Wrapper = styled('button', {
   fontWeight: "bold",
   border: "none",
   background: "$text",
+  cursor: "pointer",
+  transition: "all .3s",
+  '& > img': {
+    marginRight: 8,
+  },
+  '&:hover': {
+    filter: "brightness(0.8)"
+  }
 })

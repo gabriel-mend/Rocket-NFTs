@@ -3,9 +3,16 @@ import { styled } from "@styles";
 export const Wrapper = styled('header', {
   width: "100%",
   paddingTop: 55,
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "bottom"
+  
+  position: 'fixed',
+  top: '0',
+  left: '0',
+
+  '& > div': {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "bottom",
+  }
 })
 
 export const LinksContainer = styled('div', {
